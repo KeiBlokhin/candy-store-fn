@@ -1,9 +1,8 @@
-import HeaderSecondary from '../components/HeaderSecondary'
-
+import Layout from '../components/Layout'
 export default function Home() {
   return (
-    <div>
-      <HeaderSecondary />
-    </div>
+    <Layout criteria={true}>
+      <div>Home page</div>
+    </Layout>
   )
 }
