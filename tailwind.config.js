@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -21,6 +20,14 @@ module.exports = {
         'custom-red': '#E93939',
         'color-orange': '#FFA961',
       },
+    },
+
+    screens: {
+      xs: '375px',
+      sm: '640px',
+      md: '768px',
+      lg: '1240px',
+      xl: '1280px',
     },
   },
   plugins: [],
