@@ -29,6 +29,16 @@ const productData = [
     price: '$19.23',
     image: '/content-img-8.png',
   },
+  {
+    name: 'Jelly Candy',
+    price: '$15.33',
+    image: '/content-img-6.png',
+  },
+  {
+    name: 'Chocolate balls',
+    price: '$13.45',
+    image: '/content-img-7.png',
+  },
 ]
 
 export default productData
