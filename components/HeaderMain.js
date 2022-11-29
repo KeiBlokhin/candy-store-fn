@@ -38,7 +38,7 @@ const HeaderMain = () => {
             </div>
           </div>
           <div>
-            <Link href=''>
+            <Link href='/'>
               <Image src='/logo.png' alt='logo' height={38} width={98} />
             </Link>
           </div>
