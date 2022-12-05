@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Drawer from './Drawer'
 import BurgerMenu from './BurgerMenu'
 import Navbar from './Navbar'
-import Hero from './Hero'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -12,7 +11,12 @@ const HeaderSecondary = () => {
 
   const [active, setActive] = useState(false)
 
-  const pageTitle = router.pathname.slice(1).toUpperCase()
+  const pageTitle = router.pathname
+  const firstLetter = pageTitle.charAt(1)
+  const firstLetterCap = firstLetter.toUpperCase()
+  const remainLetters = pageTitle.slice(2)
+  const capitalizeTitle = firstLetterCap + remainLetters
+
   return (
     <div
       className='text-white mb-10 xl:mb-24 h-[257px] md:h-[384px] xl:h-[447px] bg-no-repeat bg-cover md:bg-bottom bg-center font-poppins w-full'
@@ -87,8 +91,8 @@ const HeaderSecondary = () => {
           </div>
         </div>
         <Navbar />
-        <div className='text-center text-4xl md:mt-6 xl:text-5xl leading-normal pt-8 pb-3 font-fredoka'>
-          {pageTitle}
+        <div className='text-center font-semibold text-4xl md:mt-6 xl:text-5xl leading-normal pt-8 pb-3 font-fredoka'>
+          {capitalizeTitle}
         </div>
       </div>
     </div>

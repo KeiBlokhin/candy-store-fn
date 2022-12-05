@@ -9,12 +9,14 @@ const candyColors = [
 const CandyColors = () => {
   return (
     <>
-      <div className='font-fredoka text-xl mt-8'>Color</div>
+      <div className='font-fredoka text-xl mt-8 text-custom-purple font-bold'>
+        Color
+      </div>
       <div className='flex flex-col gap-3 mt-3'>
         {candyColors.map((item, index) => {
           return (
             <div
-              className='flex font-medium font-poppins custom-purple-lite items-center gap-2'
+              className='flex font-poppins font-medium text-custom-purple-lite items-center gap-2'
               key={index}
             >
               <div

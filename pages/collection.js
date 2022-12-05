@@ -56,7 +56,7 @@ const Collection = () => {
                       />
                     </div>
                     <div className='flex w-full justify-between w-100 text-gray-400 rounded-full bg-white border-custom-gray border-[2px]'>
-                      <div className='font-semibold p-3 pl-5'>
+                      <div className='font-semibold p-3'>
                         <span className='hidden md:inline'>Showing</span> 1-6 of
                         45 <span className='hidden md:inline'>results</span>
                       </div>
@@ -65,11 +65,12 @@ const Collection = () => {
                           Sort:
                         </span>
                         <div>
-                          <div className='fkex justify-center items-center ml-2'>
+                          <div className='flex justify-center items-center ml-2'>
                             <div>
                               <select
-                                className='bg-custom font-semibold form-select w-[100px] rounded-full appearance-none block px-3 py-1.5 text-base text-gray-700 bg-clip-padding bg-no-repeat border border-solid border-custom-gray transition east-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
-                                aria-label='Default select example'
+                                className='bg-custom font-semibold form-select w-[100px] rounded-full appearance-none block px-3 py-1.5 text-base text-gray-700 bg-clip-padding 
+                              bg-no-repeat border border-solid border-custom-gray transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                                aria-label='Default select'
                               >
                                 <option value='3'>Price</option>
                               </select>
@@ -81,7 +82,6 @@ const Collection = () => {
                   </div>
                 </div>
               )}
-
               {productData.map((product, index) => {
                 return (
                   <Product

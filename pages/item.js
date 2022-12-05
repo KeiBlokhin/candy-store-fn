@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import RecomendedProducts from '../components/RecomendedProducts'
 import ShortDesc from '../components/item/ShortDesc'
-import ProductGalllery from '../components/item/ProductGalllery'
+import ProductGallery from '../components/item/ProductGallery'
 import AddToCart from '../components/item/AddToCart'
 
 const Item = () => {
@@ -10,11 +10,11 @@ const Item = () => {
       <div className='px-4 w-100 mx-auto xl:w-4/6 xl:-mt-14'>
         <div className='grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-12 mb-18'>
           <ShortDesc />
-          <ProductGalllery />
+          <ProductGallery />
           <AddToCart />
         </div>
-        <div className='border-2 mt-7 rounded-2xl border-slate-400 p-5 mb-24 mr-0 bg-white'>
-          <div className='font-fredoka font-semibold font-24 text-custom-purple mb-4'>
+        <div className='border-2 mt-7 rounded-3xl border-custom-gray p-5 mb-24 mr-0 bg-white'>
+          <div className='font-fredoka text-3xl font-bold text-custom-purple mb-4'>
             Description
           </div>
           <div className='text-custom-purple-lite font-thin'>
@@ -32,13 +32,10 @@ const Item = () => {
               dignissim suscipit. Mauris adipiscing tempus, consectetur posuere
               velit. Ullamcorper a, ut gravida nisl parturient ac lacinia sed
               lectus. Dictum nulla adipiscing convallis blandit aenean convallis
-              ullamcorper. Eget rhoncus nisi eu, nec et. Vel, aliquet ut
-              volutpat ac fringilla. Fames in adipiscing nibh eleifend
-              pellentesque volutpat interdum praesent maecenas. Ante tempor arcu
-              tellus turpis. Sed faucibus nam viverra maecenas scelerisque eu
-              enim. A, orci quis non vitae, tincidunt
+              ullamcorper.
             </p>
             <p className='mb-4'>
+              {' '}
               Nisl mauris, mauris, dignissim suscipit. Mauris adipiscing tempus,
               consectetur posuere velit. Ullamcorper a, ut gravida nisl
               parturient ac lacinia sed lectus. Dictum nulla adipiscing
@@ -49,6 +46,7 @@ const Item = () => {
               maecenas scelerisque eu enim. A, orci quis non vitae, tincidunt
             </p>
             <p>
+              {' '}
               Eget rhoncus nisi eu, nec et. Vel, aliquet ut volutpat ac
               fringilla. Fames in adipiscing nibh eleifend pellentesque volutpat
               interdum praesent maecenas. Ante tempor arcu tellus turpis. Sed

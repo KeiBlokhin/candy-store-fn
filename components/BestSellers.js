@@ -27,7 +27,7 @@ const BestSellers = () => {
               <div key={key}>
                 <div>
                   <div className='mb-10 flex flex-col justify-center align-middle'>
-                    <div className='bg-white /* border border-gray-300 */ mx-auto rounded-full h-48 w-48'>
+                    <div className='bg-white  border border-gray-300  mx-auto rounded-full h-48 w-48'>
                       <Image
                         src={data.image}
                         className='w-full h-full'
@@ -45,7 +45,7 @@ const BestSellers = () => {
                     <div className='mt-6 text-center'>
                       <Link
                         href=''
-                        className={`${data.btnLayout.textColor} ${data.btnLayout.bgColor} px-6 py-3 text-sm font-semibold rounded-full box-content`}
+                        className={`${data.btnLayout.textColor} ${data.btnLayout.bgColor} px-8 py-5 text-sm font-semibold rounded-full box-content`}
                       >
                         Watch more
                       </Link>

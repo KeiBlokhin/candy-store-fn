@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-const CartItem = ({ name, image, inStock, price }) => {
+const CartItems = ({ name, image, inStock, price }) => {
   const [qty, setQty] = useState(1)
-
   const qtyInc = () => {
     setQty(qty + 1)
   }
@@ -12,7 +11,6 @@ const CartItem = ({ name, image, inStock, price }) => {
       setQty(qty - 1)
     }
   }
-
   return (
     <div className='mb-10'>
       <div className='grid grid-cols-4 gap-2'>
@@ -23,12 +21,11 @@ const CartItem = ({ name, image, inStock, price }) => {
                 className='w-5'
                 src='/trash.svg'
                 alt='trash'
-                width={18}
+                width={16}
                 height={18}
               />
             </div>
             <div className='flex justify-center w-100 flex-1'>
-              {' '}
               <Image
                 className='md:w-full w-[50%]'
                 src={image}
@@ -44,18 +41,18 @@ const CartItem = ({ name, image, inStock, price }) => {
             <div className='md:col-span-1'>
               <div className='flex items-center w-100'>
                 <div>
-                  <div className='font-fredoka font-semibold font-24 text-custom-purple'>
+                  <div className='font-fredoka font-bold font-24 text-custom-purple'>
                     {name}
                   </div>
                   <div className='text-base mb-3 md:mb-0 font-poppinsbold font-bold md:text-xs text-custom-red-2'>
-                    {inStock ? 'In stock' : 'Not In Stock'}
+                    {inStock ? 'In Stock' : 'Not In Stock'}
                   </div>
                 </div>
               </div>
             </div>
             <div className='md:col-span-2'>
-              <div className='font-xl w-full xl:text-lg ml-auto flex items-center align-middle md:justify-start pr-1 sm:justify-between'>
-                <div className='flex justify-berween md:gap-8 w-full md:w-auto md:justify-end'>
+              <div className='text-xl w-full xl:text-lg ml-auto flex items-center align-middle md:justify-start pr-1 sm:justify-between'>
+                <div className='flex justify-between md:gap-8 w-full md:w-auto md:justify-end'>
                   <div>
                     <div className='mb-1 text-center font-poppins text-xs text-custom-purple-lite'>
                       Price
@@ -66,7 +63,7 @@ const CartItem = ({ name, image, inStock, price }) => {
                   </div>
                   <div>
                     <div className='mb-1 text-center font-poppins text-xs text-custom-purple-lite'>
-                      Quanity
+                      Quantity
                     </div>
                     <div className='font-poppins font-semibold text-xs'>
                       <div className='flex flex-row h-[31px]'>
@@ -74,7 +71,7 @@ const CartItem = ({ name, image, inStock, price }) => {
                           onClick={qtyDec}
                           className='bg-custom border-custom-gray border text-color-1 rounded-l-[16px] w-[30px] px-2 cursor-pointer outline-none'
                         >
-                          <span className='m-auto text-2xl font-thin'>-</span>
+                          <span className='m-auto text-xl font-thin'>-</span>
                         </button>
                         <input
                           type='text'
@@ -82,10 +79,10 @@ const CartItem = ({ name, image, inStock, price }) => {
                           defaultValue={qty}
                         />
                         <button
-                          onClick={qtyInc}
-                          className='bg-custom border-custom-gray border text-color-1 rounded-r-[16px] w-[30px] px-2 cursor-pointer outline-none'
+                          onClick={qtyDec}
+                          className='bg-custom border-custom-gray border text-color-1 rounded-r-[16px] w-[30px] px-1 cursor-pointer outline-none'
                         >
-                          <span className='m-auto text-2xl font-thin'>+</span>
+                          <span className='m-auto text-xl font-thin'>+</span>
                         </button>
                       </div>
                     </div>
@@ -108,4 +105,4 @@ const CartItem = ({ name, image, inStock, price }) => {
   )
 }
 
-export default CartItem
+export default CartItems

@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Hero = () => {
   return (
     <div className='flex flex-col md:flex-row md:mb-12'>
       <div className='md:w-1/2'>
-        <div className='text-4xl xl:text-5xl leading-normal py-8 font-fredoka'>
+        <div className='text-4xl xl:text-5xl leading-normal  font-semibold py-8 font-fredoka'>
           Welcome to <br /> The
           <span className='text-orange-300'> Candy</span> Store
         </div>
@@ -20,8 +20,14 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className='flex md:w-1/2 align-middle justify-center pt-10'>
-        <img className='w-56 md:w-72 xl:w-80' src='./lollipop.png' alt='' />
+      <div className='flex md:w-1/2 align-middle justify-center pt-10 lg:pt-20 '>
+        <Image
+          className='w-56 md:w-72 xl:w-180'
+          width='200'
+          height='96'
+          src='/lollipop.png'
+          alt=''
+        />
       </div>
     </div>
   )

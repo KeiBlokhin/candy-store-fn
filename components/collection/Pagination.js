@@ -14,11 +14,11 @@ const Pagination = () => {
                 height={20}
               />
             </div>
-            <div className='flex h-8 md:h-10 text-custom-purple font-medium rounded-full slace-x-1'>
+            <div className='flex h-8 md:h-10 text-custom-purple font-medium rounded-full space-x-1'>
               <div className='w-8 md:w-10 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in bg-custom rounded-full'>
                 1
               </div>
-              <div className='w-8 md:w-10 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in bg-custom-red  text-white rounded-full hover:bg-gray-700'>
+              <div className='w-8 md:w-10 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in bg-custom-red text-white rounded-full hover:bg-gray-700'>
                 2
               </div>
               <div className='w-8 md:w-10 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in bg-custom rounded-full'>
@@ -33,7 +33,7 @@ const Pagination = () => {
               <div className='w-8 md:w-10 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in bg-custom rounded-full'>
                 15
               </div>
-              <div className='h-8 md:h-10 w-8 md:w-10 ml-2 flex justify-center items-center rounded-full bg-custom cursor-pointer'>
+              <div className='h-8 md:h-10 w-8 md:w-10 mr-2 flex justify-center items-center rounded-full bg-custom cursor-pointer'>
                 <Image
                   src='/arrow-pagi-right.svg'
                   alt='arrow'
